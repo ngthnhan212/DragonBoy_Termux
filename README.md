@@ -31,7 +31,7 @@ function install() {
 	if [[ "$getbit" == *"64"* ]]
 	then
 		cd
-		curl -o -L "install" "https://github.com/ngthnhan212/DragonBoy_Termux/raw/main/bin64/install_script.sh" > /dev/null 2>&1
+		curl -L -o "install" "https://github.com/ngthnhan212/DragonBoy_Termux/raw/main/bin64/install_script.sh" > /dev/null 2>&1
 		chmod +x install
 		./install
 		unset ./install
@@ -40,12 +40,12 @@ function install() {
 		if [ -e "install" ]
 		then
 			rm install
-			curl -o -L "install" "https://github.com/ngthnhan212/DragonBoy_Termux/raw/main/bin32/install_script.sh" > /dev/null 2>&1
+			curl -L -o "install" "https://github.com/ngthnhan212/DragonBoy_Termux/raw/main/bin32/install_script.sh" > /dev/null 2>&1
 			chmod +x install
 			./install
 			unset ./install
 		else
-			curl -o -L "install" "https://github.com/ngthnhan212/DragonBoy_Termux/raw/main/bin32/install_script.sh" > /dev/null 2>&1
+			curl -L -o "install" "https://github.com/ngthnhan212/DragonBoy_Termux/raw/main/bin32/install_script.sh" > /dev/null 2>&1
 			chmod +x install
 			./install.sh
 			unset ./install
