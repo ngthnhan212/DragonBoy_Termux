@@ -28,7 +28,7 @@ function install() {
 		exit
 	esac
 	getbit=$(getprop ro.product.cpu.abi)
-	if [[ "$getbit" == *"64"* ]
+	if [[ "$getbit" == *"64"* ]]
 	then
 		cd
 		curl -o -L "install" "https://github.com/ngthnhan212/DragonBoy_Termux/raw/main/bin64/install_script.sh" > /dev/null 2>&1
