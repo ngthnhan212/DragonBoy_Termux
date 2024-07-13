@@ -47,7 +47,7 @@ function install() {
 		else
 			curl -L -o "install" "https://github.com/ngthnhan212/DragonBoy_Termux/raw/main/bin32/install_script.sh" > /dev/null 2>&1
 			chmod +x install
-			./install.sh
+			./install
 			unset ./install
 		fi
 	fi
