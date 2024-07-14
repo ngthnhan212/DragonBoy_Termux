@@ -54,3 +54,10 @@ function install() {
 }
 install
 ```
+
+
+# Một số hình ảnh mẫu:
+![Logo](https://github.com/ngthnhan212/DragonBoy_Termux/blob/main/images/session1.jpg)
+
+
+![Logo](https://github.com/ngthnhan212/DragonBoy_Termux/blob/main/images/session2.jpg)
