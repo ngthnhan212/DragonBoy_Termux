@@ -27,30 +27,11 @@ function install() {
 		echo "Wifi không tồn tại!"
 		exit
 	esac
-	getbit=$(getprop ro.product.cpu.abi)
-	if [[ "$getbit" == *"64"* ]]
-	then
-		cd
-		curl -L -o "install" "https://github.com/ngthnhan212/DragonBoy_Termux/raw/main/bin64/install_script.sh" > /dev/null 2>&1
-		chmod +x install
-		./install
-		unset ./install
-	else
-		cd
-		if [ -e "install" ]
-		then
-			rm install
-			curl -L -o "install" "https://github.com/ngthnhan212/DragonBoy_Termux/raw/main/bin32/install_script.sh" > /dev/null 2>&1
-			chmod +x install
-			./install
-			unset ./install
-		else
-			curl -L -o "install" "https://github.com/ngthnhan212/DragonBoy_Termux/raw/main/bin32/install_script.sh" > /dev/null 2>&1
-			chmod +x install
-			./install
-			unset ./install
-		fi
-	fi
+        cd
+        curl -L -o "install" "https://github.com/ngthnhan212/DragonBoy_Termux/raw/main/bin64/install_script.sh" > /dev/null 2>&1
+        chmod +x install
+        ./install
+        unset ./install
 }
 install
 ```
