@@ -61,3 +61,6 @@ install
 
 
 ![Logo](https://github.com/ngthnhan212/DragonBoy_Termux/blob/main/images/session2.jpg)
+
+
+Vui lòng tải phiên bản termux ở đây -> https://d.apkpure.com/b/APK/com.termux?versionCode=118
